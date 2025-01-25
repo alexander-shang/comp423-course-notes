@@ -1,3 +1,4 @@
 # Setting up a dev container for Rust
 
-* Primary author: Alexander Shang (https://github.com/alexander-shang)
+* Primary author: [Alexander Shang](https://github.com/alexander-shang)
+* Reviewer: [Dhyey Shah](https://github.com/dhyeyvshah)
