@@ -34,22 +34,28 @@ git push -u origin main
 ```
 
 ## Part 3: Setting up the Development Environment
-Next, you'll want to open up VSCode and open the directory you just created. You can do this via: File > Open Folder. Make sure you have the Dev Containers extension downloaded (you can find extensions on the left toolbar). Then，create a .devcontainer directory in the root of your project with the following file inside of this "hidden" configuration directory:
+Next, you'll want to open up VSCode and open the directory you just created. You can do this via: File > Open Folder. Make sure you have the Dev Containers extension downloaded (you can find extensions on the left toolbar). Then，create a ```.devcontainer``` directory in the root of your project with the following file inside of this "hidden" configuration directory:
 ```.devcontainer/devcontainer.json```
 
 In this file, you'll want to include the following code:
 ```
 {
-  "name": "COMP423 Course Notes",
-  "image": "mcr.microsoft.com/devcontainers/python:latest",
+  "name": "COMP423 Rust Tutorial",
+  "image": "mcr.microsoft.com/devcontainers/rust:latest",
   "customizations": {
     "vscode": {
         "extensions": ["rust-lang.rust-analyzer"]
     }
-  },
-  "postCreateCommand": "pip install -r requirements.txt"
+  }
 }
 ```
+!!! Note
+    ```name```: A descriptive name for your dev container.
+    
+    ```image```: The Docker image to use, in this case, the latest version of a Rust environment. Microsoft maintains a collection of base images for many programming language environments, but you can also create your own!
+    
+    ```customizations```: Adds useful configurations to VS Code, like installing the Rust extension.
+
 
 After this, you should reopen the project in the container. You can do this by pressing Ctrl+Shift+P on Windows or Cmd+Shift+P on Mac and entering "Dev Containers: Reopen in Container."
 
@@ -60,14 +66,16 @@ If the output is something other than a version number, double check that the ab
 ## Part 4: Creating your Rust Project
 1. Inside the Rust project, we're going to use Rust's package manager, Cargo:
 ```
-cargo new hello_world
-cd hello_world
+cargo new hello_comp423 --vcs-none
+cd hello_comp423
 ```
+!!! Note
+    ```--vcs-none``` ensures that a new git repository is not automatically created on your behalf
 
 2. Open the 'main.rs' file inside of the src directory and replace the contents with:
 ```
 fn main(){
-    println("Hello World!");
+    println("Hello COMP423!");
 }
 ```
 
@@ -85,7 +93,7 @@ cargo run
 ```
 Your output should be:
 ```
-Hello World!
+Hello COMP423!
 ```
 If the following output doesn't match, make sure that you followed all the instructions.
 
