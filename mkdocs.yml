@@ -8,3 +8,4 @@ markdown_extensions:
   - codehilite
   - admonition
   - pymdownx.superfences
+  - pymdownx.details
