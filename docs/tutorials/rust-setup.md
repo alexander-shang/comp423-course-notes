@@ -4,10 +4,10 @@
 * Reviewer: [Dhyey Shah](https://github.com/dhyeyvshah)
 
 ## Part 1: Prerequisites
-1. A GitHub Account
-2. Git installed
-3. Visual Studio Code
-4. Docker installed
+1. A [GitHub](https://github.com/) Account
+2. [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed
+3. [Visual Studio Code (VS Code)](https://code.visualstudio.com/download)
+4. [Docker](https://www.docker.com/get-started/) installed
 5. Command-line basics
 
 ## Part 2: Creating the Dev Container
