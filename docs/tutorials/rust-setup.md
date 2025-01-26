@@ -26,14 +26,27 @@ git add README.md
 git commit -m "Initial commit with README.md" 
 ```
 
-If you want to push this repository to your GitHub you can run the following:
+## Part 3: Create a Remote Repository on GitHub
+Log in to your GitHub account and navigate to the Create a New Repository page.
+
+Fill in the details as follows:
+
+* Repository Name: <directory-name>
+* Description: "Rust Tutorial" (this is optional)
+* Visibility: Public
+
+Do not initialize the repository with a README, .gitignore, or license.
+
+Click Create Repository.
+
+To link your local repository to GitHub you can run the following:
 ```
-git remote add origin https://github.com/<your-username>/comp423-rust-tutorial.git
+git remote add origin https://github.com/<your-username>/<directory-name>.git
 git branch -M main
 git push -u origin main
 ```
 
-## Part 3: Setting up the Development Environment
+## Part 4: Setting up the Development Environment
 Next, you'll want to open up VSCode and open the directory you just created. You can do this via: File > Open Folder. Make sure you have the Dev Containers extension downloaded (you can find extensions on the left toolbar). Then，create a ```.devcontainer``` directory in the root of your project with the following file inside of this "hidden" configuration directory:
 ```.devcontainer/devcontainer.json```
 
@@ -63,7 +76,7 @@ You can confirm the rust version in the container by runnning the command:
 ```rustc --version```.
 If the output is something other than a version number, double check that the above instructions are followed correctly.
 
-## Part 4: Creating your Rust Project
+## Part 5: Creating your Rust Project
 1. Inside the Rust project, we're going to use Rust's package manager, Cargo:
 ```
 cargo new hello_comp423 --vcs-none
@@ -79,7 +92,7 @@ fn main(){
 }
 ```
 
-## Part 5: Compiling and Running your Project
+## Part 6: Compiling and Running your Project
 Build your project by running the command:
 ```
 cargo build
