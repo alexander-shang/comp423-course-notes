@@ -1,1 +1,11 @@
-site_name: My Docs
+site_name: COMP423 Course Notes
+theme:
+  name: material
+  palette: 
+    primary: indigo
+    accent: blue
+markdown_extensions:
+  - codehilite
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
