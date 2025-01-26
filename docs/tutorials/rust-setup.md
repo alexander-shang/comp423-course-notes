@@ -72,20 +72,22 @@ fn main(){
 ```
 
 ## Part 5: Compiling and Running your Project
-1. Build your project by running the command:
+Build your project by running the command:
 ```
 cargo build
 ```
-This is similar to the ```gcc``` command in C/C++, but it does more than just compile your program. The ```cargo build``` command also automates the management of dependencies, configuration, and build settings.  
+!!! Note
+    This is similar to the ```gcc``` command in C/C++, but it does more than just compile your program. The ```cargo build``` command also automates the management of dependencies, configuration, and build settings.  
 
-2. To run the program, run the following:
+To run the program, run the following:
 ```
 cargo run
 ```
-Your out put should be:
+Your output should be:
 ```
 Hello World!
 ```
 If the following output doesn't match, make sure that you followed all the instructions.
 
-```cargo run``` combines all the steps that are executed with the 'build' command, but also executes the program!
+!!! Note
+    ```cargo run``` combines all the steps that are executed with the 'build' command, but also executes the program!
