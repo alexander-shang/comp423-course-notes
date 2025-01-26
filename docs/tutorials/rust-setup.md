@@ -79,7 +79,7 @@ If the output is something other than a version number, double check that the ab
 ## Part 5: Creating your Rust Project
 1. Inside the Rust project, we're going to use Rust's package manager, Cargo:
 ```
-cargo new hello_comp423 --vcs-none
+cargo new --vcs none hello_comp423
 cd hello_comp423
 ```
 !!! Note
